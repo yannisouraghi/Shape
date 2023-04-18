@@ -12,29 +12,29 @@ namespace Shape
         private static void Main(string[] args)
         {
             Circle obj = new Circle();
-            obj.Radius = 9;
+            obj.Radius = 3;
             AreaCalculator calc = new AreaCalculator();
-            Console.WriteLine("Cercle : " + calc.TotalArea(new object[] { obj }));
+            Console.WriteLine("Cercle : " + obj.Area());
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
             Rectangle obj2 = new Rectangle();
-            obj2.Height = 4;
-            obj2.Wight = 18;
-            Console.WriteLine("Rectangle : " + calc.TotalArea(new object[] { obj2 }));
+            obj2.Height = 5;
+            obj2.Wight = 10;
+            Console.WriteLine("Rectangle : " + obj2.Area());
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
             Square obj3 = new Square();
-            obj3.Wight = 14;
-            Console.WriteLine("Carré : " + calc.TotalArea(new object[] { obj3 }));
+            obj3.Wight = 5;
+            Console.WriteLine("Carré : " + obj3.Area());
 
             Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 
             Triangle obj4 = new Triangle();
-            obj4.triangleBase = 13;
-            obj4.triangleHauteur = 11;
-            Console.WriteLine("Triangle : " + calc.TotalArea(new object[] { obj4 }));
+            obj4.triangleBase = 2;
+            obj4.triangleHauteur = 4;
+            Console.WriteLine("Triangle : " + obj4.Area());
 
             Console.ReadLine();
         }

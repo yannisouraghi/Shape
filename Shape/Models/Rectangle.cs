@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Shape.Models
 {
-    public class Rectangle
+    public class Rectangle : Shape
     {
         public double Height { get; set; }
         public double Wight { get; set; }
+
+        public override double Area()
+        {
+            return Height * Wight;
+        }
     }
 }

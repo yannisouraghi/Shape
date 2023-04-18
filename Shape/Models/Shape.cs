@@ -6,13 +6,9 @@ using System.Threading.Tasks;
 
 namespace Shape.Models
 {
-    class Square : Shape 
+    public abstract class Shape
     {
-        public double Wight { get; set; }
+        public abstract double Area();
 
-        public override double Area()
-        {
-            return Wight * Wight;
-        }
     }
 }

@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace Shape.Models
 {
-    class Triangle
+    class Triangle : Shape
     {
         public double triangleBase;
         public double triangleHauteur;
+
+        public override double Area()
+        {
+            return triangleBase * triangleHauteur;
+        }
     }
 }
